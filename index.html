@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Simel shop </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simel Shop Admin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Simel Shop Admin Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#products">Manage Products</a></li>
+                <li><a href="#orders">Manage Orders</a></li>
+                <li><a href="#users">Manage Users</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div id="metrics">
+                <p>Total Sales: KSh <span id="total-sales">0</span></p>
+                <p>Total Products: <span id="total-products">0</span></p>
+            </div>
+        </section>
+
+        <section id="products">
+            <h2>Manage Products</h2>
+            <form id="product-form">
+                <input type="text" id="product-name" placeholder="Product Name" required>
+                <input type="number" id="product-price" placeholder="Price (KSh)" required>
+                <input type="number" id="product-stock" placeholder="Stock Quantity" required>
+                <input type="file" id="product-image" accept="image/*" required>
+                <button type="submit">Add Product</button>
+            </form>
+            <ul id="product-list"></ul>
+        </section>
+
+        <section id="orders">
+            <h2>Manage Orders</h2>
+            <!-- Order management features will go here -->
+        </section>
+
+        <section id="users">
+            <h2>Manage Users</h2>
+            <!-- User management features will go here -->
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
